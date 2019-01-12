@@ -95,11 +95,9 @@ for f=1:folds
 		probs = exp(Bx - repmat(log_sum_exp_Bx, k, 1));
 
 		[~,predcluster] = max(probs);
-		G = G(1:end-1);
 		approach1 = C(predcluster,:);
-		approach1(:,G) = x_test(1:end-1);
 		approach2 = probs' * C;
-		approach2(:,G) = x_test(1:end-1);
+		G = G(1:end-1);
 		y_s(:,G) = [];
 		approach1(:,G) = [];
 		approach2(:,G) = [];
