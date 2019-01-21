@@ -1,11 +1,11 @@
-This repository implements in Matlab the regression selection method described in
+This repository implements in Matlab the Regression Selection method described in
 "Zhang, Huikun, Lee, Ching-pei, Ericksen, Spencer S., Mason, Blake J.,
 Wlodarchak, Nathan, Mitchell, Julie C., Wildman, Scott A., Wright, Stephen J.,
 Nowak, Robert, Gitter, Anthony, Hoffman, F. Michael, and Newton, Michael A.
 Minimally-supervised, chemogenomic strategies for effective compound
 prioritization on kinases."
 
-This repository contains two different functions described in the manuscript:
+This repository implements two experiments described in the manuscript:
 1. Training a single model for prediction on new kinases
 
 2. Conducting leave-one-out cross-validation and outputing the final
