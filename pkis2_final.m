@@ -4,7 +4,7 @@ load PKIS2_1um;
 l = length(targets);
 features = 16;
 repeat = 100;
-n = size(X,1)
+n = size(X,1);
 nFeature = n;
 group = cell(nFeature+1,1);
 for i=1:nFeature

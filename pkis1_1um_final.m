@@ -1,13 +1,12 @@
 k = 13;
 load PKIS1_1um;
-l = length(targets);
 features = 16;
 repeat = 100;
-n = size(X,1)
+[n,l] = size(X);
 nFeature = n;
 group = cell(nFeature+1,1);
 for i=1:nFeature
-	group{i} = [i]; %each group has 1 coordinate, by nature the sparsa code groups the coordinates in one group for all classes together
+	group{i} = [i]; %each group has 1 coordinate
 end
 group{nFeature + 1} = n + 1;
 G0 = [nFeature + 1];%do not penalize the bias term
